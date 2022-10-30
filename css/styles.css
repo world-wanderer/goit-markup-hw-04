@@ -130,11 +130,7 @@ header > .container {
   margin-right: 10px;
 }
 .header-svg {
-  fill: #757575;
-}
-.header-svg:hover,
-.header-svg:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* =================
@@ -186,8 +182,10 @@ header > .container {
 Головний контент
 =========================== */
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
+}
+.features {
+  padding-top: 94px;
 }
 .features-item {
   width: calc((100%-90px) / 4);
@@ -197,10 +195,13 @@ header > .container {
   margin-right: 0;
 }
 .features-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .features .sub-title {
@@ -225,6 +226,7 @@ header > .container {
   text-align: center;
 }
 .team {
+  padding-top: 94px;
   background-color: #f5f4fa;
 }
 .list-item {
@@ -270,6 +272,7 @@ header > .container {
   margin-right: 10px;
 }
 .team-list {
+  display: flex;
   justify-content: center;
 }
 .link-svg {
@@ -284,17 +287,20 @@ header > .container {
 .team-svg {
   fill: #afb1b8;
 }
-.link-svg:hover,
-.link-svg:focus {
-  background: var(--accent-color);
+.link-svg:hover {
+  background-color: var(--accent-color);
 }
-.team-svg:hover,
-.team-svg:focus {
+.link-svg:hover svg {
   fill: #fff;
 }
+
 /* ====================
 Пойтійні клієнти
 ==================== */
+
+.clients {
+  padding-top: 94px;
+}
 .clients-list {
   justify-content: center;
   gap: 30px;
@@ -307,20 +313,20 @@ header > .container {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-item:hover {
-  border: 1px solid var(--accent-color);
-}
 .svg-item {
   fill: #afb1b8;
 }
-.svg-item:hover,
-.svg-item:focus {
+.clients-item:hover {
+  border: 1px solid var(--accent-color);
+}
+.clients-item:hover svg {
   fill: var(--accent-color);
 }
 
 /* ======================
 Підвал
 ====================== */
+
 .footer {
   background-color: var(--bg-primary-color);
   padding-top: 60px;
