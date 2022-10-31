@@ -287,10 +287,12 @@ header > .container {
 .team-svg {
   fill: #afb1b8;
 }
-.link-svg:hover {
+.link-svg:hover,
+.link-svg:focus {
   background-color: var(--accent-color);
 }
-.link-svg:hover svg {
+.link-svg:hover svg,
+.link-svg:focus svg {
   fill: #fff;
 }
 
@@ -305,8 +307,10 @@ header > .container {
   justify-content: center;
   gap: 30px;
 }
-.clients-item {
-  padding: 16px 32px;
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
 
@@ -316,10 +320,12 @@ header > .container {
 .svg-item {
   fill: #afb1b8;
 }
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
 }
-.clients-item:hover svg {
+.clients-link:hover svg,
+.clients-link:focus svg {
   fill: var(--accent-color);
 }
 
